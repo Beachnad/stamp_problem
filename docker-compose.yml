@@ -1,0 +1,11 @@
+version: '2.0'
+
+services:
+  nb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/jovyan/work
+    ports:
+      - 8888:8888
